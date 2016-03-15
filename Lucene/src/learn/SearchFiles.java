@@ -31,12 +31,12 @@ public class SearchFiles {
 	public static void main(String[] args) throws Exception {
 
 		String index = "index";
-		String field = "contents";
+		String field = "content";
 		String queries = "index";
 		int repeat = 0;
 		boolean raw = true;
-		String queryString = "人 我 国家 国务院 个人所得税";;
-		int hitsPerPage = 10;
+		String queryString = "考研研究生";
+		int hitsPerPage = 30;
 
 		IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 		IndexSearcher searcher = new IndexSearcher(reader);
